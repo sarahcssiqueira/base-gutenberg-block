@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "title": "Basic Block",
+    "name": "basicblock/basic",
+    "description": "A basic gutenberg block",
+    "version": "0.0.1",
+    "category": "layout",
+    "icon": "admin-tools",
+    "supports": {
+		"html": false
+	},
+    "keywords": [ "basic" ],
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./src/editor.css",
+	"style": "file:./src/style.css"
+}
