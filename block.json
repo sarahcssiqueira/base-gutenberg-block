@@ -5,12 +5,12 @@
     "name": "basicblock/basic",
     "description": "A basic gutenberg block",
     "version": "0.0.1",
-    "category": "layout",
     "icon": "admin-tools",
+    "category": "design",
     "supports": {
 		"html": false
 	},
-    "keywords": [ "basic" ],
+    "keywords": [ "basic", "model" ],
     "editorScript": "file:./build/index.js",
     "editorStyle": "file:./src/editor.css",
 	"style": "file:./src/style.css"

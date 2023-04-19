@@ -1,22 +1,23 @@
 # Basic Block
 
-To use this basic block, just clone this repository, pull the files to your machine.
+To use this basic block, just clone this repository and paste the files inside your WordPress Plugins folder. I am assuming you already have a WordPress enviroment settled. After that run 
 
-Run ` npm install ` to install the needed dependences. Although the only dependencie needed is [@wordpress/scripts](https://www.npmjs.com/package/@wordpress/scripts) which you can install by typing:
+` npm install ` 
+
+to install the needed dependencies. Although the only dependence needed is [@wordpress/scripts](https://www.npmjs.com/package/@wordpress/scripts) which you can install by typing:
 
 `npm install @wordpress/scripts --save-dev`
 
-[b]Requirements[/b]
+Requirements
 
-To use this dependence you will need:
+You will need:
 
+- WordPress Enviromnet
 - Node.js 14.0.0 or later
 - Npm 6.14.4 or later. 
 - It is not compatible with older versions.
 
-# Let's get to work!
-
-#### Package.json 
+## Let's get to work!
 
 #### index.php
 
@@ -30,12 +31,12 @@ Setup the metadata of your block, for example:
  - category
  - icon
 
-## /src folder
+### /src folder
 
  - index.js: is the entry point
  - edit.js: is where you’ll build the block admin interface
  - save.js: is where we build the block structure to be saved into the database
 
-## /build folder
+### /build folder
 
 Run `npm run build` to build your files to build folder

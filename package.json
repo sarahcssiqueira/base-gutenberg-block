@@ -1,14 +1,14 @@
 {
   "name": "basic-block",
-  "version": "1.0.0",
   "description": "basic gutenberg block",
+  "version": "1.0.0",
+  "author": "Sarah Siqueira",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "start": "wp-scripts start",
     "build": "wp-scripts build"
   },
-  "author": "Sarah Siqueira",
-  "license": "ISC",
   "devDependencies": {
     "@wordpress/scripts": "26.1.0"
   }

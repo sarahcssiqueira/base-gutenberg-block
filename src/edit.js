@@ -5,9 +5,10 @@ import { useBlockProps } from '@wordpress/block-editor';
 import '../style/editor.css';
 
 export default function Edit() {
+	
 	return (
-		<p {...useBlockProps()} className='edit'>
-			{__('Basic Gutenberg Block', 'basic-block')}
+		<p {...useBlockProps()}>
+			{__('Basic Block', 'basic-block')}
 		</p>
 	);
 }

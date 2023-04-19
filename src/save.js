@@ -4,10 +4,11 @@ import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 
 export default function Save() {
+	
 	return (
 		<p {...useBlockProps.save()}>
 			{__(
-				'Basic Gutenberg Blog - Saved Content!',
+				'Content provided for the Basic Block Plugin',
 				'basic-block'
 			)}
 		</p>
