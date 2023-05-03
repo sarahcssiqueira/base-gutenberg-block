@@ -1,6 +1,6 @@
-# Basic Block
+# Basic Gutenberg Block
 
-To use this basic block, just clone this repository and paste the files inside your WordPress Plugins folder. I am assuming you already have a WordPress enviroment settled. After that run 
+To use this basic block, just clone this repository and put the files inside your WordPress Plugins folder. I am assuming you already have a WordPress enviroment settled. After clone, run:
 
 ` npm install ` 
 
@@ -8,7 +8,7 @@ to install the needed dependencies. Although the only dependence needed is [@wor
 
 `npm install @wordpress/scripts --save-dev`
 
-Requirements
+## Requirements
 
 You will need:
 
@@ -21,7 +21,7 @@ You will need:
 
 #### index.php
 
-Rename your plugin to whatever you want to better describe your needs/purpose of your project.
+Rename your plugin to whatever you want to better describe the needs/purpose of your project.
 
 ### block.json
 

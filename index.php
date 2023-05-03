@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:       Basic Block
+ * Plugin Name:       Basic Static Block
  * Author:            Sarah Siqueira
- * Description:       Boilerplate to create a Gutenberg block
+ * Description:       Boilerplate to create a static Gutenberg block
  * Version:           0.2.0
  * Requires at least: 5.9
  * Requires PHP:      7.0
@@ -12,31 +12,46 @@
  * 
  */
 
-// Register //
 
-function basic_block_register() {
-    register_block_type(__DIR__);
+/** Exit if accessed directly **/
+if( ! defined( 'ABSPATH' ) ) exit;
+
+new Basic_Block (); // Initialize
+
+    class Basic_Block {
+
+        public function __construct() {
+            add_action( 'init', [ $this, 'basic_block_register' ] );
+            add_action( 'enqueue_block_editor_assets', [ $this, 'basic_block_enqueues' ] );
+        }
+
+        /* 
+        * Register Block 
+        *
+        */
+        public function basic_block_register() {
+            register_block_type(__DIR__);
+        }
+
+
+        /*
+        * Enqueues
+        *
+        */
+        public function basic_block_enqueues() {
+            wp_enqueue_script( 
+                'basic-block' ,
+                plugin_dir_url(__FILE__). '.build/index.js', 
+                array('wp-blocks', 'wp-i18n', 'wp-editor')
+            );
+
+            wp_enqueue_style(
+                'basic-block',
+                plugin_dir_url(__FILE__) . '.style/style.css',
+                array(),
+            );
+        }
+
 }
-
-add_action( 'init', 'basic_block_register' );
-
-// Enqueues //
-
-function basic_block_enqueues() {
-    wp_enqueue_script( 
-        'basic-block' ,
-        plugin_dir_url(__FILE__). '.build/index.js', 
-        array('wp-blocks', 'wp-i18n', 'wp-editor')
-    );
-
-    wp_enqueue_style(
-        'basic-block',
-        plugin_dir_url(__FILE__) . '.style/style.css',
-        array(),
-    );
-}
-
-add_action( 'enqueue_block_editor_assets', 'basic_block_enqueues' );
-
 
 ?>
