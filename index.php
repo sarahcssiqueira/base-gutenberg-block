@@ -33,7 +33,6 @@ new Basic_Block (); // Initialize
             register_block_type(__DIR__);
         }
 
-
         /*
         * Enqueues
         *
@@ -52,6 +51,6 @@ new Basic_Block (); // Initialize
             );
         }
 
-}
+    }
 
 ?>

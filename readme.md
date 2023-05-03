@@ -40,3 +40,5 @@ Setup the metadata of your block, for example:
 ### /build folder
 
 Run `npm run build` to build your files to build folder
+
+## Supports attributes

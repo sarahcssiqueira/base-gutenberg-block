@@ -3,15 +3,19 @@
     "apiVersion": 2,
     "title": "Basic Block",
     "name": "basicblock/basic",
-    "description": "A basic gutenberg block",
+    "description": "A basic static gutenberg block",
     "version": "0.0.1",
     "icon": "admin-tools",
     "category": "design",
     "supports": {
-		"html": false
+		"html": true
 	},
+    "attributes": {
+        "exampleAttribute": {
+            "type": "string"
+        }
+    },
     "keywords": [ "basic", "model" ],
     "editorScript": "file:./build/index.js",
-    "editorStyle": "file:./src/editor.css",
-	"style": "file:./src/style.css"
+    "editorStyle": "file:./src/style.css"
 }
