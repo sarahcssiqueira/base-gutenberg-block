@@ -23,6 +23,7 @@ new Basic_Block (); // Initialize
         public function __construct() {
             add_action( 'init', [ $this, 'basic_block_register' ] );
             add_action( 'enqueue_block_editor_assets', [ $this, 'basic_block_enqueues' ] );
+            add_filter( 'block_categories_all' , [$this, 'register_new_category'], 10, 2 );
         }
 
         /* 
@@ -49,6 +50,20 @@ new Basic_Block (); // Initialize
                 plugin_dir_url(__FILE__) . '.style/style.css',
                 array(),
             );
+        }
+
+        /*
+        * Register custom category
+        *
+        */
+        public function register_new_category ($categories) {
+            $categories[] = array(
+                'slug'  => 'custom-category',
+                'title' => 'Custom Category'
+            );
+        
+            return $categories;
+
         }
 
     }

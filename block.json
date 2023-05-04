@@ -2,11 +2,11 @@
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 2,
     "title": "Basic Block",
-    "name": "basicblock/basic",
+    "name": "basicstaticblock/basic",
     "description": "A basic static gutenberg block",
-    "version": "0.0.1",
+    "version": "0.2",
+    "category": "custom-category",
     "icon": "admin-tools",
-    "category": "design",
     "supports": {
 		"html": true
 	},
