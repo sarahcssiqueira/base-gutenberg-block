@@ -3,7 +3,7 @@
  * Plugin Name:       Basic Static Block
  * Author:            Sarah Siqueira
  * Description:       Boilerplate to create a static Gutenberg block
- * Version:           0.2.0
+ * Version:           1.0.0
  * Requires at least: 5.9
  * Requires PHP:      7.0
  * License:           ''

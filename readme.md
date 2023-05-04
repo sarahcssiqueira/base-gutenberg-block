@@ -2,7 +2,7 @@
 
 To use this basic block, just clone this repository and put the files inside your WordPress Plugins folder. I am assuming you already have a WordPress environment settled. After to clone, run:
 
-` npm install ` 
+`npm install` 
 
 to install the needed dependencies. Although the only dependence needed is [@wordpress/scripts](https://www.npmjs.com/package/@wordpress/scripts) which you can install by typing:
 
@@ -19,17 +19,17 @@ You will need:
 
 ## Let's get to work!
 
-#### index.php
+### index.php
 
-Rename your plugin to whatever you want to better describe the needs/purpose of your project.
+Rename the file **index.php** to whatever you want to better describe the needs/purpose of your project.
 
 ### block.json
 
-Setup the **metadata of your block**, which the canonical way to register block types with both PHP (server-side) and JavaScript (client-side). Here is an [example block.json](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/).
+Setup the **metadata of your block**, which is the canonical way to register block types with both PHP (server-side) and JavaScript (client-side). Here is an [example block.json](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/) for your reference.
 
 ## Attributes 
 
-Attributes are the way a block stores data, they define how a block is parsed to extract data from the saved content. The attributes is a JavaScript object containing the values of each attribute, or default values if defined.
+Attributes are the way a block stores data, they define how a block is parsed to extract data from the saved content. The attributes is a JavaScript object containing the values.
 
 In this project there's only one attribute, but you can create how many you need.
 
@@ -64,7 +64,8 @@ By default, the core provides some categories which you can assign to your Guten
 
 You can create your custom block category, using a WordPress block filter block_categories_all. In this project there's a "custom category registered". To change, go to index.php on the **register_new_category** function and change the args.
 
-´´´
+
+```
 //index.php
 
        function register_new_category ($categories) {
@@ -78,5 +79,5 @@ You can create your custom block category, using a WordPress block filter block_
 
         add_filter( 'block_categories_all' , 'register_new_category');
 
-´´´
+```
 

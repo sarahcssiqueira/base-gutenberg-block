@@ -4,7 +4,7 @@
     "title": "Basic Block",
     "name": "basicstaticblock/basic",
     "description": "A basic static gutenberg block",
-    "version": "0.2",
+    "version": "1.0.0",
     "category": "custom-category",
     "icon": "admin-tools",
     "supports": {
