@@ -1,6 +1,6 @@
 {
   "name": "basic-block",
-  "description": "basic gutenberg block",
+  "description": "Boilerplate to create a static Gutenberg block",
   "version": "1.0.0",
   "author": "Sarah Siqueira",
   "license": "ISC",
