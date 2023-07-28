@@ -55,7 +55,7 @@ Because these packages are already available, it makes much more sense to use th
 
 This project contains a basic folder structure of a Gutenberg block, as is displayed in the image below, and also an overview of each component that you will have to deal with. It's a very basic structure but can be useful for those who are starting to navigate the Gutenberg blocks world.
 
-image
+![block anatomy](https://github.com/sarahcssiqueira/base-gutenberg-block/assets/82296194/9c1989c0-3e98-4da4-812f-93ae60c2dcde)
 
 ### The index.php
 
