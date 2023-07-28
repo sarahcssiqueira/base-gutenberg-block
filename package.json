@@ -1,9 +1,9 @@
 {
-  "name": "basic-block",
-  "description": "Boilerplate to create a static Gutenberg block",
+  "name": "base-gutenberg-block",
+  "description": "Displays the anatomy of a gutenberg block project and also can used as base to you start build your own block.",
   "version": "1.0.0",
-  "author": "Sarah Siqueira",
-  "license": "ISC",
+  "author": "sarahcssiqueira",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "wp-scripts start",

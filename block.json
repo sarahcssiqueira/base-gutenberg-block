@@ -1,21 +1,21 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/block.json",
-    "apiVersion": 2,
-    "title": "Basic Block",
-    "name": "basicstaticblock/basic",
-    "description": "A basic static gutenberg block",
-    "version": "1.0.0",
-    "category": "custom-category",
-    "icon": "admin-tools",
-    "supports": {
-		"html": true
-	},
-    "attributes": {
-        "exampleAttribute": {
-            "type": "string"
-        }
-    },
-    "keywords": [ "basic", "model" ],
-    "editorScript": "file:./build/index.js",
-    "editorStyle": "file:./src/style.css"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "title": "Base Gutenberg Block",
+  "name": "sarahcssiqueira/base-gutenberg-block",
+  "description": "The metadata",
+  "version": "1.0.0",
+  "category": "custom-category",
+  "icon": "welcome-learn-more",
+  "supports": {
+    "html": true
+  },
+  "attributes": {
+    "exampleAttribute": {
+      "type": "string"
+    }
+  },
+  "keywords": ["base", "model", "tutorial"],
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./src/style/style.css"
 }
